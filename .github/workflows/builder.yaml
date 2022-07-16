@@ -4,14 +4,14 @@ env:
   BUILD_ARGS: ""
   MONITORED_FILES: "build.yaml config.yaml Dockerfile rootfs"
 
-on: workflow_dispatch
-  # push:
-  #   branches:
-  #     - main
-  # pull_request:
-  #   branches:
-  #     - main
-  #     - develop
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      - develop
 
 
 jobs:
