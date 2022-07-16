@@ -1,15 +1,11 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
-## 1.2.0
+## 0.0.1
 
-- Add an apparmor profile
-- Update to 3.15 base image with s6 v3
-- Add a sample script to run as service and constrain in aa profile
+- Dockerfile and config files taken from [tiredofit's freepbx docker GitHub repo](https://github.com/tiredofit/docker-freepbx)
+- Using example addon repo
+- Adapt Dockerfile to use HA debian images
 
-## 1.1.0
+## 0.0.0
 
-- Updates
-
-## 1.0.0
-
-- Initial release
+- Initialization of repository
