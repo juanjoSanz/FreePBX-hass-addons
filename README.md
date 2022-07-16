@@ -4,6 +4,10 @@ Install FreePBX as an Home Assistant Addon
 
 Based on repo: https://github.com/tiredofit/docker-freepbx
 
+Status: Initial idea, there is no release or test yet.
+
+![example workflow](https://github.com/juanjoSanz/FreePBX-hass-addons/actions/workflows/builder/badge.svg)
+
 ```
 To remove
 This repository can be used as a "blueprint" for add-on development to help you get started.
