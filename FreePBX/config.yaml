@@ -3,18 +3,23 @@ name: FreePBX
 version: "0.0.1"
 slug: freepbx
 description: FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. 
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/juanjoSanz/FreePBX-hass-addons"
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
-init: false
+homeassistant_api: true
 map:
   - share:rw
+  - config:rw
+  - ssl
 options:
-  message: "Hello world..."
+  test_op: test
 schema:
-  message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-freepbx"
+  test_schema: test
+image: "ghcr.io/juanjoSanz/{arch}-addon-freepbx"
+host_network: true
+init: false
+uart: true 
