@@ -1,4 +1,4 @@
-# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration-TODO
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: FreePBX Home Assistant add-on repository
-url: 'https://github.com/home-assistant/addons-example-TODO'
+url: 'https://github.com/juanjoSanz/FreePBX-hass-addons'
 maintainer: Juanjo Sanz
