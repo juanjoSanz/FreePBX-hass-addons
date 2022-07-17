@@ -4,6 +4,7 @@ version: "0.0.1"
 slug: freepbx
 description: FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. 
 url: "https://github.com/juanjoSanz/FreePBX-hass-addons"
+image: "ghcr.io/juanjoSanz/{arch}-addon-FreePBX"
 arch:
   - armhf
   - armv7
@@ -16,10 +17,9 @@ map:
   - config:rw
   - ssl
 options:
-  test_op: test
+  test_op: "test"
 schema:
-  test_schema: test
-image: "ghcr.io/juanjoSanz/{arch}-addon-freepbx"
+  test_op: str
 host_network: true
 init: false
 uart: true 
