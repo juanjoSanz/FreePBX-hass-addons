@@ -5,9 +5,9 @@ build_from:
   armv7: ghcr.io/hassio-addons/debian-base/armv7:6.0.0
   i386: ghcr.io/hassio-addons/debian-base/i386:6.0.0
 labels:
-  org.opencontainers.image.title: "Home Assistant Add-on: Asterisk"
-  org.opencontainers.image.description: "PBX server for SIP devices like doorbells and phones."
-  org.opencontainers.image.source: "https://github.com/TECH7Fox/asterisk-hass-addons"
+  org.opencontainers.image.title: "Home Assistant Add-on: FreePBX"
+  org.opencontainers.image.description: "FreePBX server"
+  org.opencontainers.image.source: "https://github.com/juanjoSanz/FreePBX-hass-addons"
   org.opencontainers.image.licenses: "MIT"
 args:
   TEMPIO_VERSION: "2021.09.0"
