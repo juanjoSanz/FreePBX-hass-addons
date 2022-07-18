@@ -26,8 +26,6 @@ Add-on documentation: <https://developers.home-assistant.io/docs/add-ons>
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-_Example add-on to use as a blueprint for new add-ons._
-
 <!--
 
 Notes to developers after forking or using the github template feature:
