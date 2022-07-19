@@ -6,11 +6,12 @@ description: FreePBX is a web-based open-source graphical user interface that ma
 url: "https://github.com/juanjoSanz/FreePBX-hass-addons"
 image: "ghcr.io/juanjosanz/{arch}-addon-freepbx"
 arch:
-  - armhf
+#   - armhf
+#   - armv7
+#   - aarch64
+#   - amd64
+#   - i386
   - armv7
-  - aarch64
-  - amd64
-  - i386
 homeassistant_api: true
 map:
   - share:rw
