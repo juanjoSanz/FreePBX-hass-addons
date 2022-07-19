@@ -1,16 +1,21 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
-# ARG BUILD_FROM
-# FROM $BUILD_FROM
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:6.0.0
+# hadolint ignore=DL3006
+FROM ${BUILD_FROM}
 
-# ARG BUILD_ARCH=armv7
-# ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/${BUILD_ARCH}:6.0.0
+# Set shell
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+# Setup base system
 ARG BUILD_ARCH=amd64
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/${BUILD_ARCH}:6.0.0
 
-FROM $BUILD_FROM AS base
-
-SHELL [ "/bin/bash", "-euxo", "pipefail", "-c" ]
+# Build arguments
+ARG BUILD_ARCH
+ARG BUILD_DATE
+ARG BUILD_DESCRIPTION
+ARG BUILD_NAME
+ARG BUILD_REF
+ARG BUILD_REPOSITORY
+ARG BUILD_VERSION
 
 ### Set defaults
 ENV ASTERISK_VERSION=17.9.4 \
