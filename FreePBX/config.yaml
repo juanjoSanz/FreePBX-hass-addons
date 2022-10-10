@@ -9,7 +9,7 @@ arch:
 #   - armhf
 #   - armv7
 #   - aarch64
-#   - amd64
+  - amd64
 #   - i386
   - armv7
 homeassistant_api: true
